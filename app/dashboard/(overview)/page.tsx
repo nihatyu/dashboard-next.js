@@ -1,7 +1,5 @@
 import { lusitana } from "@/app/ui/fonts";
-
 import CardWrapper from "@/app/ui/dashboard/cards";
-
 import RevenueChart from "@/app/ui/dashboard/revenue-chart";
 import {
   RevenueChartSkeleton,
@@ -9,8 +7,12 @@ import {
   CardsSkeleton,
 } from "@/app/ui/skeletons";
 import LatestInvoices from "@/app/ui/dashboard/latest-invoices";
-
 import { Suspense } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Overview",
+};
 
 export default async function Page() {
   return (
